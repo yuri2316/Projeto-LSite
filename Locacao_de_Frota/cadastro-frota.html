@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./css/style-cadastro-frota.css">
+</head>
+<body>
+    <nav class="menu-lateral">
+        <ul>
+            <li class="item-menu">
+                <a href="index_locacao.html">
+                    <span class="icon"><i class="bi bi-house"></i></span>
+                    <span class="txt-link">Home</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="manutencao.html">
+                    <span class="icon"><i class="bi bi-car-front-fill"></i></span>
+                    <span class="txt-link">Manutenção</span>
+                </a>
+            </li>
+            <li class="item-menu">
+                <a href="cadastro-frota.html">
+                    <span class="icon"><i class="bi bi-card-checklist"></i></span>
+                    <span class="txt-link">Cadastro de Frota</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="main-content-card">
+        <section class="conteudo">
+            <div class="card">
+                <h2>Cadastro de Veículos</h2>
+                <form>
+                    <div class="linha">
+                        <div class="campo">
+                            <label>Placa</label>
+                            <input type="text" id="placa">
+                        </div>
+                        <div class="campo">
+                            <label>Marca</label>
+                            <input type="text" id="marca">
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="campo">
+                            <label>Modelo</label>
+                            <input type="text" id="modelo">
+                        </div>
+                        <div class="campo_personalizado">
+                            <label>Combustível</label>
+                            <select name="status_vecular" id="combustivel">
+                                <option value="Gasolina">Gasolina</option>
+                                <option value="Etanol">Etanol</option>
+                                <option value="Flex">Flex</option>
+                                <option value="Diesel">Diesel</option>
+                                <option value="Diesel">Eletrico</option>
+                                <option value="Diesel">Hibrido</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="linha">
+                        <div class="campo">
+                            <label>Ano</label>
+                            <input type="text" id="ano">
+                        </div>
+                        <div class="campo_personalizado">
+                            <label>Status</label>
+                            <select name="status_vecular" id="status">
+                                <option value="Disponivel">Disponivel</option>
+                                <option value="Serviço">Serviço</option>
+                                <option value="Desmobilizado">Desmobilizado</option>
+                                <option value="Vendas">Vendas</option>
+                                <option value="Vendido">Vendido</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Cadastrar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+    
+
+    <script src="./Js/cadastro-frota.js"></script>
+</body>
+</html>

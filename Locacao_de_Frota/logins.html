@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VIATRUCK</title>
+  <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+  <div class="login-container">
+    <h2>CONECTE-SE</h2>
+
+    <form id="login-form">
+      
+      <div class="form-group">
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" required aria-label="Digite seu e-mail">
+      </div>
+
+      <div class="form-group">
+        <label for="senha">Senha:</label>
+        <div class="password-wrapper">
+          <input type="password" id="senha" required aria-label="Digite sua senha">
+          <button type="button" id="toggleSenha">Mostrar</button>
+        </div>
+      </div>  
+
+      <button type="submit" class="login-button">Entrar</button>
+
+      <p id="error-message">E-mail ou senha incorretos</p>
+
+      <a href="#" class="forgot-password">Esqueceu a senha?</a>
+    </form>
+  </div>
+
+  <script src="./Js/login.js"></script>
+
+</body>
+</html>
+

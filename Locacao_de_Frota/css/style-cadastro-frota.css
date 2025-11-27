@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+nav.menu-lateral{
+    width: 300px;
+    height: 100%;
+    background-color: #2B4E72;
+    padding: 40px 0 40px 1%;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.item-menu a:hover{
+    background-color: #226AA9;
+    border-radius: 20px;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 20px;
+}
+
+ul li.item-menu a .icon > i{
+        font-size: 30px;
+}
+
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.main-content-card {
+    position: absolute;
+    left: 320px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f3f4f6;
+    padding: 40px;
+}
+
+.main-content-card h2 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* ===== TABELA ===== */
+.tabela-principal {
+    width: 100%;
+    border-collapse: separate;  /* separa as bordas das células */
+    border-spacing: 0;          /* remove espaçamento extra */
+    background-color: #e7ebf0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Cabeçalho */
+th {
+    background-color: #1f5b8f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    border-right: 1px solid #ffffff33; /* linha vertical clara entre colunas */
+}
+
+/* Remove a linha do último cabeçalho */
+th:last-child {
+    border-right: none;
+}
+
+/* Linhas da tabela */
+td {
+    border-right: 3px solid #c0c8d2;   /* linha vertical entre colunas */
+    border-bottom: 3px solid #c0c8d2;  /* linha horizontal */
+    height: 40px;
+}
+
+/* Remove a linha da última coluna */
+td:last-child {
+    border-right: none;
+}
+
+/* Remove borda inferior da última linha */
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* ===== AJUSTES DE RESPONSIVIDADE ===== */
+@media (max-width: 768px) {
+    nav.menu-lateral {
+        width: 100%;
+        height: auto;
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content-card {
+        position: relative;
+        left: 0;
+        padding: 20px;
+    }
+
+    ul li.item-menu a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    th, td {
+        font-size: 13px;
+    }
+}
+
+
+.conteudo {
+    flex: 1;
+    padding: 30px;
+}
+
+.card {
+    background-color: #D8DEE7;
+    padding: 30px;
+    border-radius: 15px;
+    width: 900px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.card h2 {
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.linha {
+    display: flex;
+    gap: 20px;
+}
+
+.campo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.campo input {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5782C0;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.btn {
+    width: 250px;
+    padding: 15px;
+    margin: 30px auto 0 auto;
+    background-color: #61718F;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    filter: brightness(1.1);
+}
+
+.campo_personalizado {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.campo_personalizado input {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5782C0;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    outline: none;
+}
+
+.campo_personalizado select {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #5782C0;
+    color: white;
+    font-size: 16px;
+    margin-top: 5px;
+    outline: none;
+    cursor: pointer;
+    appearance: none; /* remove seta padrão do navegador */
+}
+
+/* opcional: dar uma setinha estilosa */
+.campo_personalizado {
+    position: relative;
+}
+
+.campo_personalizado select::-ms-expand {
+    display: none;
+}
+
+/* seta custom */
+.campo_personalizado::after {
+    content: "▼";
+    position: absolute;
+    top: 70%;
+    right: 15px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 14px;
+    color: white;
+    border-radius: 20px;
+}
+
+

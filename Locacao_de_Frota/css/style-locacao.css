@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+nav.menu-lateral{
+    width: 300px;
+    height: 100%;
+    background-color: #2B4E72;
+    padding: 40px 0 40px 1%;
+}
+
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+
+ul li.item-menu{
+    transition: 1s;
+}
+
+ul li.item-menu a:hover{
+    background-color: #226AA9;
+    border-radius: 20px;
+}
+
+ul li.item-menu a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+
+ul li.item-menu a .txt-link{
+    margin-left: 20px;
+}
+
+ul li.item-menu a .icon > i{
+        font-size: 30px;
+}
+
+.logout-btn {
+    background-color: #FF4B4B;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    width: 100px;
+    transition: background 0.3s;
+    font-weight: 600;
+    margin-left: 75px;
+}
+
+.logout-btn:hover {
+    background-color: #E03A3A;
+}
+
+
+/* ===== CONTEÚDO PRINCIPAL ===== */
+.main-content-card {
+    position: absolute;
+    left: 320px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f3f4f6;
+    padding: 40px;
+}
+
+.main-content-card h2 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* ===== TABELA ===== */
+.tabela-principal {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #e7ebf0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+th {
+    background-color: #1f5b8f;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    border-right: 1px solid #ffffff33;
+}
+
+th:last-child {
+    border-right: none;
+}
+
+td {
+    border-right: 3px solid #c0c8d2;
+    border-bottom: 3px solid #c0c8d2;
+    height: 40px;
+}
+
+td:last-child {
+    border-right: none;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* ===== BOTÃO EDITAR ===== */
+.btn-editar {
+  background: none;
+  border: none;
+  color: #2B4E72;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-editar:hover {
+  color: #1E90FF;
+  transform: scale(1.2);
+}
+
+/* ===== MODAL ===== */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h3 {
+  text-align: center;
+  color: #2B4E72;
+  margin-bottom: 15px;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.fechar {
+  float: right;
+  font-size: 22px;
+  cursor: pointer;
+  color: #555;
+}
+
+/* BOTÃO DE SALVAR LOCAÇÃO (AZUL) */
+.btn-salvar {
+  background-color: #2B4E72;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn-salvar:hover {
+  background-color: #1E3A5F;
+}
+
+/* NOVO BOTÃO DE DEVOLVER VEÍCULO (VERMELHO) */
+.btn-devolver {
+    background-color: #ff4b4b; /* Vermelho */
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px; /* Adiciona espaço entre salvar e devolver */
+    transition: background 0.3s;
+}
+
+.btn-devolver:hover {
+    background-color: #cc3a3a;
+}
+
+/* BOTÃO DE RESETAR TUDO (AZUL) */
+.btn-resetar {
+  background-color: #2B4E72;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+
+.btn-resetar:hover {
+  background-color: #1E90FF;
+  transform: scale(1.05);
+}
