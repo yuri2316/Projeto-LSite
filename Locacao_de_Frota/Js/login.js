@@ -27,6 +27,6 @@ const errorMsg = document.getElementById('error-message');
       } 
       else {
         errorMsg.style.display = 'none';
-        window.location.href = "./index_locacao.html";
+        window.location.href = "./index.html";
       }
     });

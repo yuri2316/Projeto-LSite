@@ -56,5 +56,5 @@ form.addEventListener("submit", function(event) {
     }
 
     localStorage.setItem("frota", JSON.stringify(frota));
-    window.location.href = "index_locacao.html";
+    window.location.href = "index.html";
 });
